@@ -1,20 +1,17 @@
-<?php
+<?php declare(strict_types=1);
+namespace App\Models;
 
-declare(strict_types=1);
-
-namespace App\Models {
-
-    /**
-    * App\Models\User
-    *
-    * This is the host application's user model.
-    * Override $table, $connection, $fillable, or any method here.
-    *
-    * Inheritance chain:
-    *   App\Models\User  ->  Webkernel\StdUser
-    */
-    class User extends \Webkernel\StdUser
-    {
+/**
+* App\Models\User
+*
+* This is the host application's user model.
+* Override $table, $connection, $fillable, or any method here.
+*
+* Inheritance chain:
+*   App\Models\User  ->  Webkernel\StdUser
+*/
+final class User extends \Webkernel\StdUser
+{
 
         /**
         * Uncomment to point to a different table.
@@ -34,4 +31,3 @@ namespace App\Models {
             'avatar_url',
         ];
     }
-}
